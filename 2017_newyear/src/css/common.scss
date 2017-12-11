@@ -1,0 +1,39 @@
+$remNum:100;
+@function px($n){@return $n/$remNum+rem;}
+
+@mixin fullImg($w,$h){
+  background-size:$w $h;
+  width:$w;
+  height: $h;
+}
+@mixin setBackground($w,$h){
+  width: px($w);
+  height: px($h);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.fl {
+  float: left;
+  display: inline;
+}
+.fr {
+  float: right;
+  display: inline;
+}
+
+
+/*select, input {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  border: 0;
+  outline: 0;
+}*/

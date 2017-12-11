@@ -1,0 +1,1 @@
+(function(){app.controller("homePageController",function(o,n,t){var e=!1;o.$view.find(".bottom_content").on("touchstart",function(){e=!0,n["goto"]("/page2")}),o.onAdd=function(n){o.add(),o.$view.find(".main_content").addClass("mainActive"),o.$view.find(".bottom_content").addClass("bottomActive")},o.onRemove=function(n){o.remove()}})}).call(this);

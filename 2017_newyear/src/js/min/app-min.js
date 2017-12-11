@@ -1,0 +1,1 @@
+var app=gb.module("app",[],function(l,t,e){t.loading({tpl:"tpl/loading.html"}).when("/home",{tpl:"tpl/home.html",libs:["./css/lib.css"],asIndex:!0}).when("/page2",{tpl:"tpl/page2.html",libs:["./css/lib.css"],asIndex:!1}).other("/home")});$(window).bind("touchstart",function(l){l.cancelable&&l.preventDefault()});
